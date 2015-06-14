@@ -1,29 +1,11 @@
 @media screen and (min-width: 480px){
- 
-/*******************
-TWO COLUMN LAYOUT
-*******************/
 
-
-#primary{
-    width: 50%;
-    float: left;
-  }
-
-#secondary{
-    width: 40%;
-    float: right;
-  }  
 
   
   
   /*******************
   PAGE: PORTFOLIO
   *******************/
-  
-  #gallery li{
-    width: 76.8%;
-  }
   
   #gallery li:nth-child(4n){
     clear: left;
@@ -38,24 +20,31 @@ TWO COLUMN LAYOUT
     float: left;
     margin: 0 5% 80px 0;
   }
+
+  #about-footer{
+    border: none;
+  }
   
 }
 
-@media screen and (min-width: 660px){
- 
+
+@media screen and (min-width: 740px){
+
   /*******************
-  HEADER
+  TWO COLUMN LAYOUT
   *******************/
-  
-  nav{
-    background: none;
-    float: right;
-    font-size: 1.125em;
-    margin-right: 5%;
-    text-align: right;
-    width: 45%;
-  }
-  
+
+  #primary{
+      width: 50%;
+      float: left;
+    }
+
+  #secondary{
+      width: 40%;
+      float: right;
+      vertical-align: top;
+    }  
+
   #logo{
     float: left;
     margin-left: 5%;
@@ -71,15 +60,38 @@ TWO COLUMN LAYOUT
     font-size: 0.825em;
     margin-bottom: 20px;
   }
-  
-  header{
-    border-bottom: 5px solid #1A4D80;
-    margin-bottom: 60px;
-  }
-  
-}
 
-@media screen and (min-width: 740px){
+  header{
+    padding: 3em 0 3em 0;
+    border-bottom: 5px solid #1A4D80; 
+  }
+
+  nav{
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+
+  #wrapper{
+    border: none;
+    max-width: 940px;
+  }
+
+  #wrapper-index{
+    background-color: #f9f9f9;
+    padding-bottom: 40px;
+  }
+
+  #contact-wrapper{
+    border: none;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 80px 40px;
+  }
+
   #second a{
     float: right;
   }
@@ -90,7 +102,9 @@ TWO COLUMN LAYOUT
 
   #gallery li{
     text-align: left;
-    margin: 30px 0;
+    margin: 50px 0 10px;
+    width: 76.8%;
+    padding: 40px 20px;
   }
 
   #gallery li a{
@@ -102,14 +116,15 @@ TWO COLUMN LAYOUT
   .website-summary{
     display: inline-block;
     width: 50%;
-    margin: 20px;
     vertical-align: top;
+    margin-top: 0;
+    padding-top: 0;
     margin-left: 10%;
     clear: both;
   }
 
   #summary-left{
-  margin: 20px 10% 20px;
+    margin: 0 8% 20px;
   }
 
   #first,
@@ -121,6 +136,11 @@ TWO COLUMN LAYOUT
     float: right;
   }
 
+  footer{
+    background-color: #f9f9f9;
+    border: none;
+  }
+
 
 }
 
@@ -128,5 +148,25 @@ TWO COLUMN LAYOUT
   #wrapper-index{
   width: 80%;
   margin: 0 auto;
+  clear: both;
 }
+}
+
+
+@media screen and (min-width: 1024px){
+  header h1{
+    font-size: 3em;
+  }
+
+  header h2{
+    font-size: 2em;
+  }
+
+  header{
+    padding: 5em 0 10em 0;
+  }
+
+  nav a.selected, nav a:hover{
+    color: #2060A0;
+  }
 }
