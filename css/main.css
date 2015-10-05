@@ -1,315 +1,57 @@
-/*******************
-GENERAL
-*******************/
-
 body{
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
   height: 100%;
-}
-
-#wrapper{
-  clear: both;
-  margin: 0 auto;
-  padding: 40px 20px;
-  border-right: 40px solid #333;
-  border-left: 40px solid #333;
-}
-
-a{
-  text-decoration: none;
-}
-
-
-h3{
-  margin: 0 0 1em 0;
-}
-
-
-
-/*******************
-HEADING
-*******************/
-
-
-header{
-  float: left;
-  margin: 0;
-  width: 100%;
-  padding-top: 2em;
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-#logo{
-  text-align: center; /*"center" is a keyword*/
-  margin: 0;
+#navigation a{
+  color: white;
 }
 
-header h1{
-  font-family: 'Montserrat', sans-serif;
-  margin: 15px 0;
-  font-size: 1.75;
-  font-weight: normal;
-  line-height: 0.8em;
+#navigation a:hover{
+  background-color: #597eaa;
 }
 
-header h2{
-  font-size: 0.75em;
-  margin: -5px 0 0; /* brings h1 and h2 elements tighter together */
-  font-weight: normal;
+#banner{
+  margin: 200px 0;
+  padding: 40px;
+  color: white;
+  background-color: rgba(25, 25, 25, .50);
 }
 
-
-
-/*******************
-Navigation
-*******************/
-
-nav{
-  text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
-  background: rgba(0,0,0,0.5);
+.btn-blue{
+  background-color: #597eaa;
+  margin: 0 20px;
 }
 
-nav ul{
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
+.btn-blue:hover{
+  background-color: #354C66;
 }
 
-nav li{
-    display: inline-block;
+#banner-btn li:hover{
+  color: #ccc;
 }
 
-nav a{
-  font-weight: 800;
-  padding: 15px 10px;
+#projects{
+  background-color: #fafafa;
 }
 
+#spacer{
+  height: 200px;
+}
 
-/*******************
-FOOTER
-*******************/
-
-footer{
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding-top: 50px;
-  
+#contact{
+  background-color: #597eaa;
 }
 
 .social-icon{
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin: 0 5px;
-}
-
-
-
-
-/*******************
-PAGE PORTFOLIO
-*******************/
-
-#wrapper-index{
-  background-color: #333;
-  clear: both;
-}
-
-#gallery{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#gallery li{
-  margin: 0;
-  background: #777;
-  padding: 40px 10px 10px;
-  text-align: center;
-  }
-
-#gallery li a{
-  display: inline-block;
-  margin: 0 auto;
-  border: 2px solid #333;
-  width: 80%;
-}
-
-#gallery li p{
-  font-size: 1em;
-  color: white;
-  text-align: center;
-  letter-spacing: 1px;
-  vertical-align: middle;
-  line-height: 2em;
-}
-
-.website-summary{
-  display: block;
-  margin: 20px;
-  vertical-align: middle;
-  padding: 10px 0;
-  clear: both;
-}
-
-.website-summary p{
-  width: 100%;
-  margin: 0 auto;
-}
-
-#gallery img{
-  clear: both;
-  width: 100%;
-  padding: 0;
+  padding: 5px;
+  background-color: rgba(200, 200, 200, .5);
   vertical-align: top;
-  display: block;
-}
-
-#first,
-#third{
-  border-right: 40px solid #333;
-  border-left: 40px solid #333;
-}
-
-#second{
-  clear: both;
-  border-left: 40px solid #333;
-  border-right: 40px solid #333;
-}
-
-#third{
-  clear: right;
-}
-
-.left{
-  float: left;
-}
-
-.right{
-  clear: both;
-  float: right;
-}
-
-footer{
-  background-color: #f9f9f9;
-  border-left: 40px solid #333;
-  border-right: 40px solid #333;
-  padding-bottom: 20px;
-}
-
-footer p{
-  margin-bottom: 0;
-}
-
-
-/*******************
-PAGE: ABOUT
-*******************/
-
-.profile-photo{
-  display: block;
-  max-width: 150px;
-  margin: 0 auto 30px;
-  border-radius: 20%;
-  border: 2px solid #999;
-}
-
-section h1{
-  font-size: 1.25em;
-}
-
-section h2{
-  font-size: 1em;
-  color: #1A4D80;
-}
-
-.location-section{
-  clear: left;
-}
-
-
-
-/*******************
-PAGE: CONTACT
-*******************/
-
-#contact-wrapper{
-  clear: both;
-  padding: 30px 20px;
-  border-left: 40px solid #333;
-  border-right: 40px solid #333;
-}
-
-.contact-info{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0.9em;
-}
-
-.contact-info a{
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
-}
-
-.contact-info li.phone a{
-  background-image: url('../img/phone.png');
-}
-
-.contact-info li.mail a{
-  background-image: url('../img/mail.png');
-}
-
-.contact-info li.twitter a{
-  background-image: url('../img/twitter.png');
-}
-
-#contact-footer{
-  border: none;
-}
-
-
-
-/*******************
-COLORS
-*******************/
-
-/* site body */
-
-
-/* green header */
-
-
-/*nav background on mobile*/
-
-
-/* logo text */
-header h1, header h2{
-  color: #fff;
-}
-
-/* links */
-a{
-  color: #2060A0; 
-}
-
-/* nav link */
-nav a, nav a:visited{
-  color: #fff;
-}
-
-/* selected nav link */
-nav a.selected, nav a:hover {
-  color: #4D80B3;
+  border-radius: 5px;
 }
