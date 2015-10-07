@@ -1,10 +1,19 @@
 #body{
   font-family: 'Bitter', sans-serif;
   height: 100%;
+  background-color: #333;
+}
+
+#background{
+  height: 100%;
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+#background-overlay{
+  background-color: rgba(25, 25, 25, .50);
 }
 
 #navigation{
@@ -48,16 +57,16 @@
 
 #banner{
   color: white;
-  background-color: rgba(25, 25, 25, .50);
   padding-bottom: 20px;
 }
 
 #banner h3{
   font-family: 'Raleway', serif;
+  font-size: 1em;
 }
 
 #hello{
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: 2px;
 }
 
@@ -88,9 +97,11 @@
 }
 
 #projects h2{
+  display: inline-block;
   color: #333;
   margin: 30px 0;
   font-family: 'Raleway', serif;
+  border-bottom: 2px solid #597eaa;
 }
 
 #spacer{
@@ -154,14 +165,26 @@
   }
 
   #banner{
-    margin: 230px 0;
+    margin: 20px 0;
     padding: 40px 0;
   }
 }
 
 @media screen and (min-width: 1140px){
+  #background-overlay{
+    background: none;
+  }
   #banner{
-    margin: 260px 0;
+    margin: 200px 0;
     padding: 40px 0;
+    background-color: rgba(25, 25, 25, .50);
+  }
+
+  #hello{
+    font-size: 3em;
+  }
+
+  #banner h3{
+    font-size: 1.72em;
   }
 }
