@@ -1,7 +1,13 @@
+/* Universal ---------------------*/
+
 #body{
   font-family: 'Bitter', sans-serif;
   height: 100%;
   background-color: #333;
+}
+
+#body p{
+  font-size: 16px;
 }
 
 #background{
@@ -15,6 +21,33 @@
 #background-overlay{
   background-color: rgba(25, 25, 25, .50);
 }
+
+.btn-blue{
+  background-color: #597eaa;
+  margin: 0 20px;
+}
+
+.btn-blue:hover{
+  background-color: #354C66;
+}
+
+.blue{
+  color: #597eaa;
+}
+
+.bottom-spacing{
+  margin-bottom: 20px;
+}
+
+.bottom-spacing-medium{
+  margin-bottom: 40px;
+}
+
+.banner-block{
+  padding: 100px 0 120px;
+}
+
+/* Navigation ---------------------*/
 
 #navigation{
   padding-top: 20px;
@@ -55,9 +88,16 @@
   display: none;
 }
 
+/* Home Page ---------------------*/
+
+#landing-page{
+  height: 100vh;
+  text-align: center;
+}
+
 #banner{
   color: white;
-  padding-bottom: 20px;
+  display: inline-block;
 }
 
 #banner h3{
@@ -68,15 +108,6 @@
 #hello{
   font-size: 2em;
   letter-spacing: 2px;
-}
-
-.btn-blue{
-  background-color: #597eaa;
-  margin: 0 20px;
-}
-
-.btn-blue:hover{
-  background-color: #354C66;
 }
 
 #banner-btn{
@@ -91,9 +122,28 @@
   color: #ccc;
 }
 
+#philosophy{
+  background-color: #333;
+  color: white;
+}
+
+#what-i-do{
+  background-color: #ccc;
+}
+
+#process{
+  background-color: #597eaa;
+  color: white;
+}
+
+#contact-form{
+  background-color: #ccc;
+}
+
 #projects{
   background-color: #fafafa;
   padding: 40px 0;
+  margin: 0;
 }
 
 #projects h2{
@@ -103,6 +153,8 @@
   font-family: 'Raleway', serif;
   border-bottom: 2px solid #597eaa;
 }
+
+/* Footer ----------------------*/
 
 #spacer{
   height: 200px;
@@ -129,10 +181,6 @@
   padding: 0 10px;
 }
 
-.blue{
-  color: #597eaa;
-}
-
 .social-icon{
   width: 30px;
   height: 30px;
@@ -154,6 +202,9 @@
 }
 
 @media screen and (min-width: 560px){
+  #background-overlay{
+    background: none;
+  }
   #logo{
     float: left;
   }
@@ -166,18 +217,15 @@
 
   #banner{
     margin: 20px 0;
-    padding: 40px 0;
+    padding: 40px;
+    background-color: rgba(25, 25, 25, .50);
   }
 }
 
 @media screen and (min-width: 1140px){
-  #background-overlay{
-    background: none;
-  }
   #banner{
     margin: 200px 0;
-    padding: 40px 0;
-    background-color: rgba(25, 25, 25, .50);
+    padding: 40px;
   }
 
   #hello{
