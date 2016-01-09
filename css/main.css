@@ -1,12 +1,12 @@
 /* Universal ---------------------*/
 
 #body{
-  font-family: 'Bitter', sans-serif;
+  font-family: 'Raleway', sans-serif;
   height: 100%;
   background-color: #333;
 }
 
-#body p{
+p{
   font-size: 16px;
 }
 
@@ -25,6 +25,10 @@
 .btn-blue{
   background-color: #597eaa;
   margin: 0 20px;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
 }
 
 .btn-blue:hover{
@@ -44,7 +48,19 @@
 }
 
 .banner-block{
-  padding: 100px 0 120px;
+  padding: 180px 0 200px;
+}
+
+.banner-block-text{
+  font-size: 18px;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.serif{
+  font-family: 'Bitter', serif;
 }
 
 /* Navigation ---------------------*/
@@ -75,17 +91,14 @@
 
 .navigation li{
   list-style: none;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 10px 20px;
   display: inline;
 }
 
 .navigation li a{
   text-decoration: none;
-}
-
-#nav-items{
-  display: none;
+  font-weight: bold;
 }
 
 /* Home Page ---------------------*/
@@ -98,10 +111,11 @@
 #banner{
   color: white;
   display: inline-block;
+  padding: 20% 15px;
 }
 
 #banner h3{
-  font-family: 'Raleway', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1em;
 }
 
@@ -150,7 +164,7 @@
   display: inline-block;
   color: #333;
   margin: 30px 0;
-  font-family: 'Raleway', serif;
+  font-family: 'Raleway', sans-serif;
   border-bottom: 2px solid #597eaa;
 }
 
@@ -205,26 +219,23 @@
   #background-overlay{
     background: none;
   }
-  #logo{
-    float: left;
-  }
 
   #nav-items{
     display: inline-block;
-    float: right;
     margin-top: 10px;
   }
 
   #banner{
-    margin: 20px 0;
+    margin: 10% 0;
     padding: 40px;
     background-color: rgba(25, 25, 25, .50);
+    border-radius: 5px;
   }
 }
 
 @media screen and (min-width: 1140px){
   #banner{
-    margin: 200px 0;
+    margin: 10% 0;
     padding: 40px;
   }
 
