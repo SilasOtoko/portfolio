@@ -10,22 +10,23 @@ p{
   font-size: 16px;
 }
 
-#background{
-  height: 100%;
-  background-image: url("../img/background.jpg");
-  background-repeat: no-repeat;
+#banner{
+  background: url('../img/background.jpg')no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
 }
 
-#background-overlay{
+#banner-overlay{
+  padding: 10% 20px 20%;
   background-color: rgba(25, 25, 25, .50);
 }
 
 .btn-blue{
   background-color: #597eaa;
   margin: 0 20px;
-  padding: 15px 30px;
+  padding: 5px 10px;
   display: inline-block;
   border-radius: 5px;
   color: white;
@@ -104,14 +105,12 @@ p{
 /* Home Page ---------------------*/
 
 #landing-page{
-  height: 100vh;
   text-align: center;
 }
 
 #banner{
   color: white;
   display: inline-block;
-  padding: 20% 15px;
 }
 
 #banner h3{
@@ -180,10 +179,6 @@ p{
 
 /* Footer ----------------------*/
 
-#spacer{
-  padding: 160px 0;
-}
-
 #contact{
   background-color: #333;
   padding: 20px 0;
@@ -226,8 +221,8 @@ p{
 }
 
 @media screen and (min-width: 560px){
-  #background-overlay{
-    background: none;
+  #landing-page{
+    height: 100vh;
   }
 
   #nav-items{
@@ -237,9 +232,24 @@ p{
 
   #banner{
     margin: 10% 0;
-    padding: 40px;
+  }
+
+  #banner-overlay{
     background-color: rgba(25, 25, 25, .50);
-    border-radius: 5px;
+    height: auto;
+    padding: 40px;
+  }
+
+  #background{
+    background: url('../img/background.jpg')no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #spacer{
+    padding: 160px 0;
   }
 }
 
@@ -248,11 +258,29 @@ p{
   #what-i-do{
     padding: 200px 0 260px;
   }
+
+  .btn-blue{
+    padding: 15px 30px;
+  }
+
+  #banner-overlay{
+    margin: 20% 0;
+    background-color: rgba(25, 25, 25, .50);
+    border-radius: 5px;
+  }
+
+  #background{
+    background-attachment: fixed;
+  }
+
+  #background-overlay{
+    background: none;
+  }
 }
 
 @media screen and (min-width: 1140px){
-  #banner{
-    margin: 10% 0;
+  #banner-overlay{
+    margin: 18% 0;
     padding: 40px;
   }
 
