@@ -11,7 +11,7 @@ p{
 }
 
 #banner{
-  background: url('../img/background.jpg')no-repeat center center fixed; 
+  background: url('../img/background-min.jpg')no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -177,6 +177,12 @@ p{
   margin-bottom: 40px;
 }
 
+#body .project a:hover{
+  text-decoration: none;
+  border: 2px solid #333;
+  margin-bottom: 18px;
+}
+
 /* Footer ----------------------*/
 
 #contact{
@@ -246,10 +252,6 @@ p{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
-
-  #spacer{
-    padding: 160px 0;
   }
 }
 
