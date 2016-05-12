@@ -4,6 +4,9 @@
   font-family: 'Open Sans', sans-serif;
   height: 100%;
   background-color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 p{
@@ -11,7 +14,7 @@ p{
 }
 
 #banner{
-  background: url('../img/background-min.jpg')no-repeat center center fixed; 
+  background: url('../img/background-min.jpg')no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -19,8 +22,15 @@ p{
 }
 
 #banner-overlay{
-  padding: 10% 20px 20%;
   background-color: rgba(25, 25, 25, .50);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.greeting {
+  margin: 0 auto;
 }
 
 .btn-blue{
@@ -177,10 +187,17 @@ p{
   margin-bottom: 40px;
 }
 
-#body .project a:hover{
+#body .project a {
   text-decoration: none;
-  border: 2px solid #333;
+}
+
+#body .project a:hover{
+  outline-color: #333;
   margin-bottom: 18px;
+}
+
+.caption {
+  min-height: 250px;
 }
 
 /* Footer ----------------------*/
@@ -217,18 +234,13 @@ p{
   transition: width .2s, height .2s;
 }
 
-.social-icon:hover{
-  width: 35px;
-  height: 35px;
-}
-
 #back-to-top a{
   color: white;
 }
 
 @media screen and (min-width: 560px){
-  #landing-page{
-    height: 100vh;
+  #banner{
+    height: 80vh;
   }
 
   #nav-items{
@@ -237,17 +249,17 @@ p{
   }
 
   #banner{
-    margin: 10% 0;
+    width: 100%;
   }
 
   #banner-overlay{
     background-color: rgba(25, 25, 25, .50);
-    height: auto;
-    padding: 40px;
+    height: 80vh;
+    width: 100%;
   }
 
   #background{
-    background: url('../img/background.jpg')no-repeat center center fixed; 
+    background: url('../img/background.jpg')no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -266,9 +278,7 @@ p{
   }
 
   #banner-overlay{
-    margin: 20% 0;
     background-color: rgba(25, 25, 25, .50);
-    border-radius: 5px;
   }
 
   #background{
@@ -282,8 +292,6 @@ p{
 
 @media screen and (min-width: 1140px){
   #banner-overlay{
-    margin: 18% 0;
-    padding: 40px;
   }
 
   #hello{
